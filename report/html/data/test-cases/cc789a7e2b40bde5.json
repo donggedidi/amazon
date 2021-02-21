@@ -1,0 +1,171 @@
+{
+  "uid" : "cc789a7e2b40bde5",
+  "name" : "test_login[christinazhai0216@163.com--test_christina-请输入您的密码]",
+  "fullName" : "scripts.test_login.TestLogin#test_login",
+  "historyId" : "f6de8fa360b4856379f1c46e7873a4e7",
+  "time" : {
+    "start" : 1613903362496,
+    "stop" : 1613903369502,
+    "duration" : 7006
+  },
+  "status" : "passed",
+  "flaky" : false,
+  "newFailed" : false,
+  "beforeStages" : [ ],
+  "testStage" : {
+    "status" : "passed",
+    "steps" : [ {
+      "name" : "点击登录链接",
+      "time" : {
+        "start" : 1613903362496,
+        "stop" : 1613903363239,
+        "duration" : 743
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : false
+    }, {
+      "name" : "输入邮箱",
+      "time" : {
+        "start" : 1613903365242,
+        "stop" : 1613903365389,
+        "duration" : 147
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ {
+        "uid" : "ad8979e85912b234",
+        "name" : "b942e416-c6c8-4baf-81e4-0ac00a956a0c-attachment.attach",
+        "source" : "ad8979e85912b234.attach",
+        "type" : "text/plain",
+        "size" : 40
+      } ],
+      "parameters" : [ {
+        "name" : "email",
+        "value" : "'christinazhai0216@163.com'"
+      } ],
+      "stepsCount" : 0,
+      "attachmentsCount" : 1,
+      "shouldDisplayMessage" : false,
+      "hasContent" : true
+    }, {
+      "name" : "点击继续按钮",
+      "time" : {
+        "start" : 1613903365389,
+        "stop" : 1613903366380,
+        "duration" : 991
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : false
+    }, {
+      "name" : "输入密码",
+      "time" : {
+        "start" : 1613903366380,
+        "stop" : 1613903366425,
+        "duration" : 45
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ {
+        "uid" : "d5b7a8f810675b03",
+        "name" : "58d6a006-d65e-489a-b286-daf15e5481ab-attachment.attach",
+        "source" : "d5b7a8f810675b03.attach",
+        "type" : "text/plain",
+        "size" : 15
+      } ],
+      "parameters" : [ {
+        "name" : "password",
+        "value" : "''"
+      } ],
+      "stepsCount" : 0,
+      "attachmentsCount" : 1,
+      "shouldDisplayMessage" : false,
+      "hasContent" : true
+    }, {
+      "name" : "点击登录按钮",
+      "time" : {
+        "start" : 1613903369429,
+        "stop" : 1613903369502,
+        "duration" : 73
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : false
+    } ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 5,
+    "attachmentsCount" : 2,
+    "shouldDisplayMessage" : false,
+    "hasContent" : true
+  },
+  "afterStages" : [ ],
+  "labels" : [ {
+    "name" : "parentSuite",
+    "value" : "scripts"
+  }, {
+    "name" : "suite",
+    "value" : "test_login"
+  }, {
+    "name" : "subSuite",
+    "value" : "TestLogin"
+  }, {
+    "name" : "host",
+    "value" : "192.168.2.101"
+  }, {
+    "name" : "thread",
+    "value" : "14339-MainThread"
+  }, {
+    "name" : "framework",
+    "value" : "pytest"
+  }, {
+    "name" : "language",
+    "value" : "cpython3"
+  }, {
+    "name" : "package",
+    "value" : "scripts.test_login"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ {
+    "name" : "account_name",
+    "value" : "'test_christina'"
+  }, {
+    "name" : "email",
+    "value" : "'christinazhai0216@163.com'"
+  }, {
+    "name" : "error",
+    "value" : "'请输入您的密码'"
+  }, {
+    "name" : "password",
+    "value" : "''"
+  } ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ ],
+    "categories" : [ ],
+    "tags" : [ ]
+  },
+  "source" : "cc789a7e2b40bde5.json",
+  "parameterValues" : [ "'test_christina'", "'christinazhai0216@163.com'", "'请输入您的密码'", "''" ]
+}

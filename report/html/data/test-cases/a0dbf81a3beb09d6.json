@@ -1,0 +1,188 @@
+{
+  "uid" : "a0dbf81a3beb09d6",
+  "name" : "test_login[-1234qwer-test_christina-输入您的邮箱地址或手机号码]",
+  "fullName" : "scripts.test_login.TestLogin#test_login",
+  "historyId" : "f680e33c44098346af5114d222129ba0",
+  "time" : {
+    "start" : 1613903288549,
+    "stop" : 1613903321314,
+    "duration" : 32765
+  },
+  "status" : "passed",
+  "flaky" : false,
+  "newFailed" : false,
+  "beforeStages" : [ ],
+  "testStage" : {
+    "status" : "passed",
+    "steps" : [ {
+      "name" : "点击登录链接",
+      "time" : {
+        "start" : 1613903288549,
+        "stop" : 1613903288884,
+        "duration" : 335
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : false
+    }, {
+      "name" : "输入邮箱",
+      "time" : {
+        "start" : 1613903290888,
+        "stop" : 1613903290955,
+        "duration" : 67
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ {
+        "uid" : "fb67f8f2e07ffc6d",
+        "name" : "a3bd8c36-959f-45d7-81ca-9f5119de75bb-attachment.attach",
+        "source" : "fb67f8f2e07ffc6d.attach",
+        "type" : "text/plain",
+        "size" : 15
+      } ],
+      "parameters" : [ {
+        "name" : "email",
+        "value" : "''"
+      } ],
+      "stepsCount" : 0,
+      "attachmentsCount" : 1,
+      "shouldDisplayMessage" : false,
+      "hasContent" : true
+    }, {
+      "name" : "点击继续按钮",
+      "time" : {
+        "start" : 1613903290955,
+        "stop" : 1613903291067,
+        "duration" : 112
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : false
+    }, {
+      "name" : "输入密码",
+      "time" : {
+        "start" : 1613903291067,
+        "stop" : 1613903321244,
+        "duration" : 30177
+      },
+      "status" : "broken",
+      "statusMessage" : "selenium.common.exceptions.TimeoutException: Message: \n\n",
+      "statusTrace" : "  File \"/Users/christinazhai/PycharmProjects/mytest/venv/lib/python3.6/site-packages/allure_commons/_allure.py\", line 157, in impl\n    return func(*a, **kw)\n  File \"/Users/christinazhai/PycharmProjects/amazon/page/page_login.py\", line 22, in page_input_password\n    self.base_input(page.password,password)\n  File \"/Users/christinazhai/PycharmProjects/amazon/base/base_action.py\", line 26, in base_input\n    el = self.base_find_element(loc)\n  File \"/Users/christinazhai/PycharmProjects/amazon/base/base_action.py\", line 15, in base_find_element\n    return WebDriverWait(self.driver, timeout=time, poll_frequency=poll).until(lambda x: x.find_element(*loc))\n  File \"/Users/christinazhai/PycharmProjects/mytest/venv/lib/python3.6/site-packages/selenium/webdriver/support/wait.py\", line 80, in until\n    raise TimeoutException(message, screen, stacktrace)\n",
+      "steps" : [ ],
+      "attachments" : [ {
+        "uid" : "ebe2a56a940eb2cb",
+        "name" : "01367f57-13bf-4d65-abab-ace82a909df9-attachment.attach",
+        "source" : "ebe2a56a940eb2cb.attach",
+        "type" : "text/plain",
+        "size" : 23
+      } ],
+      "parameters" : [ {
+        "name" : "password",
+        "value" : "'1234qwer'"
+      } ],
+      "stepsCount" : 0,
+      "attachmentsCount" : 1,
+      "shouldDisplayMessage" : true,
+      "hasContent" : true
+    }, {
+      "name" : "获取页面上的错误提示",
+      "time" : {
+        "start" : 1613903321251,
+        "stop" : 1613903321290,
+        "duration" : 39
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : false
+    }, {
+      "name" : "获取页面上的错误提示",
+      "time" : {
+        "start" : 1613903321290,
+        "stop" : 1613903321314,
+        "duration" : 24
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : false
+    } ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 6,
+    "attachmentsCount" : 2,
+    "shouldDisplayMessage" : false,
+    "hasContent" : true
+  },
+  "afterStages" : [ ],
+  "labels" : [ {
+    "name" : "parentSuite",
+    "value" : "scripts"
+  }, {
+    "name" : "suite",
+    "value" : "test_login"
+  }, {
+    "name" : "subSuite",
+    "value" : "TestLogin"
+  }, {
+    "name" : "host",
+    "value" : "192.168.2.101"
+  }, {
+    "name" : "thread",
+    "value" : "14339-MainThread"
+  }, {
+    "name" : "framework",
+    "value" : "pytest"
+  }, {
+    "name" : "language",
+    "value" : "cpython3"
+  }, {
+    "name" : "package",
+    "value" : "scripts.test_login"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ {
+    "name" : "account_name",
+    "value" : "'test_christina'"
+  }, {
+    "name" : "email",
+    "value" : "''"
+  }, {
+    "name" : "error",
+    "value" : "'输入您的邮箱地址或手机号码'"
+  }, {
+    "name" : "password",
+    "value" : "'1234qwer'"
+  } ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ ],
+    "categories" : [ ],
+    "tags" : [ ]
+  },
+  "source" : "a0dbf81a3beb09d6.json",
+  "parameterValues" : [ "'test_christina'", "''", "'输入您的邮箱地址或手机号码'", "'1234qwer'" ]
+}

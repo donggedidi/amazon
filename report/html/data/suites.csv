@@ -1,0 +1,6 @@
+"Status","Start Time","Stop Time","Duration in ms","Parent Suite","Suite","Sub Suite","Test Class","Test Method","Name","Description"
+"passed","Sun Feb 21 18:28:45 CST 2021","Sun Feb 21 18:29:18 CST 2021","32889","scripts","test_login","TestLogin","","","test_login[christinazhai021@163.com-1234qwer-test_christina-我们找不到具有该电子邮件地址的账户]",""
+"passed","Sun Feb 21 18:29:33 CST 2021","Sun Feb 21 18:29:41 CST 2021","7689","scripts","test_login","TestLogin","","","test_login[christinazhai0216@163.com-1234-test_christina-您的密码不正确]",""
+"passed","Sun Feb 21 18:28:08 CST 2021","Sun Feb 21 18:28:41 CST 2021","32765","scripts","test_login","TestLogin","","","test_login[-1234qwer-test_christina-输入您的邮箱地址或手机号码]",""
+"passed","Sun Feb 21 18:29:22 CST 2021","Sun Feb 21 18:29:29 CST 2021","7006","scripts","test_login","TestLogin","","","test_login[christinazhai0216@163.com--test_christina-请输入您的密码]",""
+"passed","Sun Feb 21 18:29:45 CST 2021","Sun Feb 21 18:29:54 CST 2021","9141","scripts","test_login","TestLogin","","","test_login[christinazhai0216@163.com-1234qwer-test_christina-]",""
