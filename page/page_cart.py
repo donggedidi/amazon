@@ -11,12 +11,13 @@ class PageCart(BaseAction):
     @allure.step("计算总价")
     def page_calculate_total_price(self):
         price_list = self.base_find_elements(page.product_price)
-        print(len(price_list))
         product_quantity=self.base_find_elements(page.prduct_quantity)
         calculate_total_price=0
         for i in range(0,len(price_list)):
+            logging.info("第{}个商品".format(i))
             result=self.base_caculate_one_product_price(price_list,product_quantity,i)
             calculate_total_price +=result
+        logging.info("计算总价完成")
         return calculate_total_price
 
     @allure.step("获取页面上的总价")

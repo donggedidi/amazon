@@ -1,7 +1,7 @@
 from base.base_action import BaseAction
 from page.page_cart import PageCart
 from page.page_edit_address import PageEditAddress
-from page.page_goods_detail import PageGoodsDetail
+from page.page_goods_detail import PageProductDetail
 from page.page_home import PageHome
 from page.page_login import PageLogin
 from page.page_my_account import PageMyAccount
@@ -19,8 +19,8 @@ class Page(BaseAction):
         return PageHome(self.driver)
 
     @property
-    def goods_detail(self):
-        return PageGoodsDetail(self.driver)
+    def product_detail(self):
+        return PageProductDetail(self.driver)
 
     @property
     def search_result(self):

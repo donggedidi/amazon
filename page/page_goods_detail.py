@@ -4,7 +4,7 @@ import page
 from base.base_action import BaseAction
 
 
-class PageGoodsDetail(BaseAction):
+class PageProductDetail(BaseAction):
     @allure.step("加入购物车")
     def page_click_add_to_cart(self):
         self.base_click(page.add_to_cart)

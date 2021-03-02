@@ -19,9 +19,9 @@ login_btn=By.ID,"signInSubmit"
 error=By.CSS_SELECTOR,".a-alert-content"
 
 """search_result"""
-goods_list=By.CSS_SELECTOR,".a-section.aok-relative"
+product_list=By.CSS_SELECTOR,".a-section.aok-relative"
 
-"""goods_detail"""
+"""product_detail"""
 add_to_cart=By.CSS_SELECTOR,"#add-to-cart-button"
 add_to_cart_info=By.CSS_SELECTOR,".a-size-medium.a-text-bold"
 

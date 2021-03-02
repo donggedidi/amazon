@@ -1,7 +1,7 @@
 class BaseData:
 
     def get_data_file(self,filename):
-        path="../data/{}".format(filename)
+        path="./data/{}".format(filename)
         with open(path,"r",encoding="utf-8") as f:
             return f.readlines()
 

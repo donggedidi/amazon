@@ -117,6 +117,7 @@ class BaseAction:
         actual_price = self.base_split_price(price_str)
         product_quantity_int = int(quantity_list[i].text)
         result = actual_price * product_quantity_int
+        logging.info("此商品单价是：{}，数量：{},总价：{}".format(actual_price,product_quantity_int,result))
         return result
 
 

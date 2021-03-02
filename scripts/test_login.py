@@ -12,7 +12,6 @@ from page.page import Page
 # logger = BaseLogging().get_logging()
 
 class TestLogin:
-
     def setup(self):
         self.driver=BaseDriver().get_driver()
         self.page=Page(self.driver)

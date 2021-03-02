@@ -23,11 +23,11 @@ class TestCart:
             self.page.login.page_login("christinazhai0216@163.com","1234qwer")
             self.page.home.page_input_keywords("skii")
             self.page.home.page_click_search_btn()
-            self.page.search_result.page_click_goods()
+            self.page.search_result.page_click_product()
             self.page.search_result.page_switch_handle()
             sleep(2)
-            self.page.goods_detail.page_click_add_to_cart()
-            info=self.page.goods_detail.page_get_cart_info()
+            self.page.product_detail.page_click_add_to_cart()
+            info=self.page.product_detail.page_get_cart_info()
             assert info=="商品已加入购物车","加入购物车失败，请检查"
 
 

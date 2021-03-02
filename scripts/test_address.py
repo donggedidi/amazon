@@ -19,7 +19,6 @@ class TestAddress:
         self.driver.quit()
 
     def test_address(self):
-
         self.page.home.page_click_login_link()
         self.page.login.page_login("christinazhai0216@163.com", "1234qwer")
         self.page.home.page_click_my_account()
