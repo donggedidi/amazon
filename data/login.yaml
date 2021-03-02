@@ -1,6 +1,0 @@
-email,password,account_name,error
-,1234qwer,test_christina,输入您的邮箱地址或手机号码
-christinazhai021@163.com,1234qwer,test_christina,我们找不到具有该电子邮件地址的账户
-christinazhai0216@163.com,,test_christina,请输入您的密码
-christinazhai0216@163.com,1234,test_christina,您的密码不正确
-christinazhai0216@163.com,1234qwer,test_christina,

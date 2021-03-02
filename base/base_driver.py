@@ -2,21 +2,18 @@ from selenium import webdriver
 
 import page
 class BaseDriver:
-
     driver=None
-    @classmethod
-    def get_driver(cls):
-        if cls.driver is None:
-            cls.driver=webdriver.Chrome()
-            cls.driver.maximize_window()
-            cls.driver.get(page.URL)
-            return cls.driver
+    def get_driver(self):
+        if self.driver is None:
+            self.driver=webdriver.Chrome()
+            self.driver.maximize_window()
+            self.driver.get(page.URL)
+            return self.driver
 
-    @classmethod
-    def driver_quit(cls):
-        if cls.driver:
-            cls.driver.quit()
-            cls.driver=None
+    def driver_quit(self):
+        if self.driver:
+            self.driver.quit()
+            self.driver=None
 
 if __name__ == '__main__':
     BaseDriver().get_driver()

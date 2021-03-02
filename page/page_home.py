@@ -20,5 +20,32 @@ class PageHome(BaseAction):
     def page_back_to_index(self):
         self.base_click(page.logo)
 
+    @allure.step("输入框输入内容")
+    def page_input_keywords(self,keywords):
+        allure.attach("搜索关键字是：{}".format(keywords))
+        self.base_input(page.search_box,keywords)
+
+    @allure.step("点击搜索按钮")
+    def page_click_search_btn(self):
+        self.base_click(page.search_btn)
+
+
+    # @allure.step("mouse over在我的账户上")
+    # def page_mouse_over_my_account(self):
+    #     self.base_mouse_over(page.my_account)
+
+    @allure.step("点击在我的账户上")
+    def page_click_my_account(self):
+        self.base_click(page.my_account)
+
+    def page_click_cart(self):
+        self.base_click(page.cart_link)
+
+
+
+
+
+
+
 
 

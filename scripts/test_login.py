@@ -1,9 +1,6 @@
+import logging
 import os,sys
 sys.path.append(os.getcwd())
-from selenium.common.exceptions import TimeoutException
-
-import page
-
 
 
 import pytest
@@ -12,6 +9,7 @@ from base.base_data import BaseData
 from base.base_driver import BaseDriver
 from page.page import Page
 
+# logger = BaseLogging().get_logging()
 
 class TestLogin:
 
@@ -20,10 +18,12 @@ class TestLogin:
         self.page=Page(self.driver)
 
     def teardown(self):
-        BaseDriver().driver_quit()
+        logging.info("完成测试")
+        self.driver.quit()
 
-    @pytest.mark.parametrize(("email","password","account_name","error"),BaseData().read_data("login.yaml"))
+    @pytest.mark.parametrize(("email","password","account_name","error"),BaseData().read_data("login.txt"))
     def test_login(self,email,password,account_name,error):
+        logging.info("点击登录链接")
         self.page.home.page_click_login_link()
         sleep(2)
         if error == None:
@@ -35,16 +35,8 @@ class TestLogin:
             try:
                 self.page.login.page_login(email, password)
             except Exception:
-                print("数据里到error:{}".format(error))
-                print("页面上获取到到error：{}".format(self.page.login.page_get_error_text()))
                 assert error==self.page.login.page_get_error_text(),"断言有问题，请检查"
 
-
-
-        # self.page.login.page_input_email(email)
-        # self.page.login.page_click_continue_btn()
-        # sleep(3)
-        # print(self.page.login.page_get_error_text())
 
 
 
